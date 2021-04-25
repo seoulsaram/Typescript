@@ -43,6 +43,7 @@
   //   printName('Ellie', 0);
 
   //😇옵셔널하게 파라미터 받는 버전
+  //아래와 같이 ?를 붙여주면 lastName이라는 파라미터는 받을 수도, 받지 않을 수도 있다는 뜻.
   function printName(firstName: string, lastName?: string) {
     console.log(firstName);
     console.log(lastName);
