@@ -1,0 +1,72 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Basic Options */
+    // "incremental": true,                         /* 이전에 컴파일 된 사항과 비교해서 수정된 내용만 컴파일 함.  */
+    "target": "es5" /* 어떤 버전으로 컴파일 할 것인지 설정 */,
+    "module": "commonjs" /* 모듈 정보를 어떻게 할 건지 설정. 즉, import, export문 사용 시 컴파일 되는 모양새를 결정: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
+    // "lib": [],                  /* lib을 따로 설정하지 않으면 target의 라이브러리를 사용하고, lib을 설정하면 lib에 설정한 라이브러리를 사용할 수 있게 되는데, 보통 lib은 설정하지 않고 target만 설정하여 상용한다.  */
+    // "allowJs": true,        /* 프로젝트 안에서 자바스크립트 파일을 같이 쓸건지 결정하는 것 */
+    // "checkJs": true,                             /* js에서도 잘못된 코드가 있을 경우 에러를 보여주는 옵션 (true일 경우) */
+    // "jsx": "preserve",    /* (리액트 설정) Specify JSX code generation: 'preserve', 'react-native', 'react', 'react-jsx' or 'react-jsxdev'. */
+    // "declaration": true,                         /* Generates corresponding '.d.ts' file. */
+    // "declarationMap": true,                      /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    "sourceMap": true /* 이걸 true로 설정하면 map이라는 파일을 생성하겠다는 뜻이다. map파일에는 우리가 작성한 ts파일과 컴파일된 js를 연결시켜주는 모든 정보가 들어있음.*/,
+    // "outFile": "./",          /* 작성한 다수의 ts파일을 딱 하나의 js파일로 만들 때 사용  */
+    "outDir": "./build" /* Redirect output structure to the directory. */,
+    "rootDir": "./src" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
+    // "composite": true,    /* 이전에 빌드된 정보를 기억하고 있어서 다음에 빌드할 때 더 빠르게 빌드할 수 있게 도와줌  */
+    // "tsBuildInfoFile": "./",              /* incremental이 true이면 관련된 정보들을 담을 수 있는 파일을 지정하는 것  */
+    // "removeComments": true,     /* 코멘트를 다 없애주는 것 */
+    // "noEmit": true,                        /* true면 컴파일 에러 체크만 하고 실제로 js코드로 변환하는 일은 하지 않음 . */
+    // "importHelpers": true,           /* Import emit helpers from 'tslib'. */
+    // "downlevelIteration": true,    /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+    // "isolatedModules": true,       /* 각각의 파일을 다른 모듈로 변환해서 만들어주는 것 */
+
+    /* Strict Type-Checking Options */
+    "strict": true /* Enable all strict type-checking options. */,
+    // "noImplicitAny": true,                       /* Raise error on expressions and declarations with an implied 'any' type. */
+    // "strictNullChecks": true,                    /* Enable strict null checks. */
+    // "strictFunctionTypes": true,                 /* Enable strict checking of function types. */
+    // "strictBindCallApply": true,                 /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+    // "strictPropertyInitialization": true,        /* Enable strict checking of property initialization in classes. */
+    // "noImplicitThis": true,                      /* Raise error on 'this' expressions with an implied 'any' type. */
+    // "alwaysStrict": true,                        /* Parse in strict mode and emit "use strict" for each source file. */
+
+    /* Additional Checks */
+    // "noUnusedLocals": true,                      /* Report errors on unused locals. */
+    // "noUnusedParameters": true,                  /* Report errors on unused parameters. */
+    // "noImplicitReturns": true,                   /* Report error when not all code paths in function return a value. */
+    // "noFallthroughCasesInSwitch": true,          /* Report errors for fallthrough cases in switch statement. */
+    // "noUncheckedIndexedAccess": true,            /* Include 'undefined' in index signature results */
+    // "noPropertyAccessFromIndexSignature": true,  /* Require undeclared properties from index signatures to use element accesses. */
+
+    /* Module Resolution Options */
+    // "moduleResolution": "node",                  /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    // "baseUrl": "./",                             /* Base directory to resolve non-absolute module names. */
+    // "paths": {},                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
+    // "typeRoots": [],                             /* List of folders to include type definitions from. */
+    // "types": [],                                 /* Type declaration files to be included in compilation. */
+    // "allowSyntheticDefaultImports": true,        /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    // "preserveSymlinks": true,                    /* Do not resolve the real path of symlinks. */
+    // "allowUmdGlobalAccess": true,                /* Allow accessing UMD globals from modules. */
+
+    /* Source Map Options */
+    // "sourceRoot": "",                            /* Specify the location where debugger should locate TypeScript files instead of source locations. */
+    // "mapRoot": "",                               /* Specify the location where debugger should locate map files instead of generated locations. */
+    // "inlineSourceMap": true,                     /* Emit a single file with source maps instead of having a separate file. */
+    // "inlineSources": true,                       /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
+
+    /* Experimental Options */
+    // "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
+    // "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
+
+    /* Advanced Options */
+    "skipLibCheck": true /* Skip type checking of declaration files. */,
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+  },
+  "exclude": ["./src/dev.ts"]
+}
